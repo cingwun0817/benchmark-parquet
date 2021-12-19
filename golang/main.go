@@ -36,7 +36,7 @@ func main() {
 		"cost":              "m_3",
 	}
 
-	rf, err := os.Open("../large.log")
+	rf, err := os.Open("../data/large.log")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -44,7 +44,7 @@ func main() {
 
 	reader := bufio.NewReader(rf)
 
-	wf, err := local.NewLocalFileWriter("../output-golang.parquet")
+	wf, err := local.NewLocalFileWriter("../data/output-large-golang.parquet")
 	if err != nil {
 		log.Fatal(err)
 	}

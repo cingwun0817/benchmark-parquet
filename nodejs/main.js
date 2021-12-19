@@ -3,7 +3,7 @@ var readline = require('readline');
 var parquet = require('parquetjs');
 
 var lineReader = readline.createInterface({
-    input: fs.createReadStream('../middle.log')
+    input: fs.createReadStream('../data/large.log')
 });
 
 (async (lineReader) => {
@@ -18,7 +18,7 @@ var lineReader = readline.createInterface({
         m_3: {type: 'FLOAT'},
     });
 
-    var writer = await parquet.ParquetWriter.openFile(schema, '../output-nodejs.parquet');
+    var writer = await parquet.ParquetWriter.openFile(schema, '../data/output-large-nodejs.parquet');
 
     var count = 0;
     lineReader.on('line', (line) => {
