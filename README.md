@@ -54,8 +54,7 @@ node main.js
 
 Contributors names and contact info
 
-ex. Leo Wang
-ex. [LinkenIn](http://linkedin.com/in/cingwun0817)
+* [CHING WEN, WANG](http://linkedin.com/in/cingwun0817)
 
 ## License
 
